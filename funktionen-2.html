@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>02.js-basics/09.arrow-functions</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h3>exercises</h3>
+      </section>
+      <section>
+        <h2>02.js-basics/09.arrow-functions</h2>
+        <ol>
+        <li>Make a function named <code>ten</code> that takes in zero arguments and return the value 10. Try using both <code>()</code> and <code>_</code> syntax.</li>
+        <li>Make a function named <code>logger</code> that takes in one argument. It logs the argument you passed into it. Try it with and without parenthesis <code>()</code>.</li>
+        <li>Make a function called <code>add</code> that adds two numbers together. Try it with and without implicit returns</li>
+        <li>Make a function called <code>multiply</code> that multiplies two numbers together. Try it with and without implicit returns</li>
+</ol>
+      </section>
+    </main>
+    <script>
+//#1
+//       var ten =  function (){
+//             return 10;
+//         } 
+//       var ten = ()=>{return 10};
+       var ten = _=>{return 10};
+        
+//#2
+//        var logger = function(foo){
+//                console.log(foo);
+//        }
+//         var logger = (foo)=>{console.log(foo);}
+         var logger = foo=>{console.log(foo);}
+        
+//#3
+         var add = function(num1, num2){
+             let result = num1 + num2;
+             return result;
+         }
+         var add= (num1, num2) => num1 + num2
+         var multiply = (num1, num2) => num1 * num2
+    </script>
+  </body>
+</html>
